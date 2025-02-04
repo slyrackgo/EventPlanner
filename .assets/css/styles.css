@@ -1,0 +1,472 @@
+:root {
+  /* CSS HEX */
+  --gunmetal: #292f36ff;
+  --medium-turquoise: #4ecdc4ff;
+  --mint-cream: #f7fff7ff;
+  --calm-lavender: rgb(241, 233, 252);
+  --bittersweet: #ff6b6bff;
+  --yellow-crayola: #ffe66dff;
+  --event-card-dynamic: darkslateblue;
+  --event-selection: darkgray;
+  --extra-light-cream: rgb(253, 253, 253);
+}
+
+/*whole document styling*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.flex-wrapper {
+  font-family: "Oxygen", sans-serif;
+  color: var(--gunmetal);
+  font-weight: bold;
+  background-color: var(--gunmetal);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+i {
+  pointer-events: none;
+}
+button {
+  font-weight: bold;
+}
+
+/*Header styling*/
+
+.nav-item {
+  font-family: "Bubblegum Sans", cursive;
+}
+
+/*End of header styling */
+
+/*landing page styling*/
+
+#first-page-button {
+  width: 35%;
+}
+
+.start-page-section {
+  background-image: url(../images/event-start-pic2.png);
+  background-position: center;
+  background-repeat: repeat-x;
+  animation: animatedBackground 20s linear infinite alternate;
+}
+
+.page-name {
+  color: var(--gunmetal);
+}
+
+.page-name:hover {
+  color: var(--mint-cream);
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex: 1;
+}
+
+/*end of landing page styling*/
+
+/*start of details page styling*/
+
+#event-details-section {
+  background-image: url(../images/celebration.jpg);
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+#event-details-message {
+  color: var(--extra-light-cream);
+  margin-bottom: rem;
+}
+
+.description {
+  min-height: 7rem;
+}
+
+#event-details-form {
+  margin: auto;
+  width: 45%;
+  color: var(--mint-cream);
+}
+
+.form-button-div {
+  width: 100%;
+  margin: 0;
+}
+
+/*End of event details page styling*/
+
+/*Start of food and music pages styling*/
+
+.food-select,
+.music-input {
+  min-width: 300px;
+  min-height: 50px;
+}
+
+.select-div {
+  width: 50%;
+}
+.food-section,
+.music-section {
+  background-image: url(../images/celebration.jpg);
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+#food-card-container,
+#music-card-container {
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--medium-turquoise);
+}
+
+.food-container,
+.music-container {
+  max-width: 75%;
+}
+
+.music-text-div,
+.food-text-div {
+  color: mintcream;
+}
+
+/*API card container on food and music pages styling*/
+
+.api-card {
+  width: 15rem;
+  margin: 10px;
+}
+
+.card-content {
+  margin-bottom: 41px;
+  position: relative;
+}
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.empty p {
+  color: var(--bittersweet);
+  background-color: var(--mint-cream);
+  padding: 5px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+  backdrop-filter: blur(50px);
+}
+.notification {
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(50px);
+}
+
+/*Styles for Food & Music Aside section*/
+
+.food-aside,
+.music-aside {
+  min-width: 20%;
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--medium-turquoise);
+  color: mintcream;
+  margin-left: 30px;
+}
+.food-aside *,
+.music-aside * {
+  font-weight: bold;
+}
+
+.remaining-count {
+  font-size: smaller;
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+.selected-items-list {
+  min-height: 300px;
+}
+.list-item li {
+  color: var(--mint-cream);
+  font-weight: bold;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.event-select {
+  font-weight: bold;
+}
+
+/*event card page styling*/
+
+.event-card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-height: 75vh;
+  width: 100%;
+}
+
+.card-design {
+  border: 1px solid black;
+  padding: 3rem;
+  background-color: var(--extra-light-cream);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#event-page-card-name {
+  margin-bottom: 1rem;
+}
+
+.card-design * {
+  font-size: 20px;
+  font-weight: bold;
+}
+.event-card-section h2 {
+  color: var(--gunmetal);
+  font-size: 25px;
+}
+
+.h2-title {
+  color: var(--gunmetal);
+  font-size: 40px;
+}
+
+.event-card-section p {
+  color: var(--gunmetal);
+  padding-top: 1rem;
+}
+
+.event-card-text {
+  margin-bottom: 2rem;
+}
+
+.event-card-section {
+  background-image: url(../images/celebration.jpg);
+}
+
+.event-food-container,
+.event-music-container {
+  margin: 0.5rem;
+  padding: 0.25rem;
+}
+
+hr {
+  margin: 1rem 0 1rem 0;
+  border: 1px solid var(--event-card-dynamic);
+}
+
+/*small music and food cards on event cards*/
+
+.event-selection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.small-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.small-card {
+  width: 10rem;
+  margin: 6px;
+}
+.small-card-content {
+  margin: 1rem;
+}
+
+/* saved events */
+
+.main {
+  background-image: url(../images/celebration.jpg);
+}
+
+.saved-events-container {
+  width: 60%;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+
+.event-page-card {
+  margin-bottom: 1rem;
+}
+
+.saved-page-title {
+  width: 100%;
+  color: mintcream;
+}
+
+.event-card-btn {
+  margin: 0 auto;
+  display: block;
+  height: 3rem;
+  width: 20%;
+}
+
+.delete-button {
+  margin: auto;
+}
+
+.print-card-container {
+  margin: auto;
+}
+
+/*Footer styles*/
+.footer {
+  padding: 10px 0;
+  letter-spacing: 0.4m;
+  width: 100%;
+  margin: auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-icon {
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 4px;
+  margin: 3px;
+}
+
+/*MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .nav-item {
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #event-details-form {
+    margin: auto;
+    width: 90%;
+  }
+
+  .food-aside,
+  .music-aside {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .delete-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .event-card-btn {
+    width: 90%;
+  }
+  .saved-events-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-item {
+    text-align: center;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .food-aside,
+  .music-aside {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  #event-details-form {
+    margin: auto;
+    width: 90%;
+  }
+  .delete-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .event-card-btn {
+    width: 90%;
+  }
+  .saved-events-container {
+    width: 90%;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .section-to-print,
+  .section-to-print * {
+    visibility: visible;
+  }
+  .section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
