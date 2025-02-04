@@ -12,7 +12,7 @@ The created events are saved in local storage and the user can consult and edit 
 
 [Mukhammad Olimov](https://github.com/Muhammad12710)
 
-## Links to the project
+
 
 ## Technologies
 
