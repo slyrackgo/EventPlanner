@@ -21,6 +21,6 @@ The created events are saved in local storage and the user can consult and edit 
 Future improvement:
 
 - refactor for a cleaner code
-- Add featuer that allows to choose food at the event and music preference
+- Add technical features that allows you to choose food at the event and music preference
 - add more options for the user to further personalise their event
-  cards, such as being able to choose from a selection of fonts and uploading their own pictures on to their cards.
+  cards, such as being able to choose from a selection of fonts and uploading their own pictures onto their cards.
